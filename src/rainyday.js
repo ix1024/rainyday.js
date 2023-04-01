@@ -286,6 +286,7 @@ RainyDay.prototype.prepareGlass = function () {
   this.glass.width = this.canvas.width
   this.glass.height = this.canvas.height
   this.context = this.glass.getContext('2d')
+  this.context.filter = "blur(1.5px)"
 }
 
 /**
